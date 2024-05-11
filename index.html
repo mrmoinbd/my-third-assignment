@@ -4,23 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockyes project</title>
 
     <!-- tailwind and daisyui custom -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Custom css -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- Custom taiwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'text-color': '#131318',
+                        'button-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
-<body>
+<body class="font-manrope">
     <header>
 
+        <!-- nabvar section start -->
+        <section class="container mx-auto lg:px-12 px-4 mt-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+
+                    </div>
+                    <a class=" lg:text-4xl text-2xl font-extrabold text-[#131318]">Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#424247] font-normal text-[16px]">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-6">
+                    <img class="hidden lg:flex" src="Images/search.svg" alt="">
+                    <a class="btn bg-[#FF4240] text-white lg:text-xl text-lg font-bold px-4 py-2 lg:px-6 ">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </section>
+        <!-- nabvar section end -->
+
+        <!-- banner section start -->
+        <section class="container mx-auto lg:px-12 px-4 mt-6 lg:mt-12">
+            <div>
+                <div class="carousel w-full ">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img class="bg-center bg-cover rounded-xl lg:rounded-2xl" src="Images/1.png" class="w-full" />
+
+                        <div class="absolute lg:bottom-10 bottom-5 lg:left-10 right-32">
+                            <a href="#slide4" class="btn btn-circle  bg-[#131318] text-white border-none">❮</a>
+                            <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                            class="w-full" />
+                        <div class="absolute bottom-10 left-10 ">
+                            <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none">❮</a>
+                            <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-none">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- banner child -->
+                <div
+                    class=" bg-[#131318] p-4 lg:p-8 mt-4 rounded-xl lg:rounded-2xl lg:w-1/2 lg:translate-x-[430px] lg:-translate-y-56">
+                    <h3 class=" text-lg lg:text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                    <p class="text-sm lg:text-[16px] font-medium mt-4 text-[#ffffff99]">Dit amet consectetur.
+                        Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end -->
     </header>
+
     <main>
+
+        <!-- radial progress section -->
+        <section class="container mx-auto lg:px-12 px-4 lg:mt-12">
+            <div>
+                <h1 class="text-4xl font-extrabold text-[#131318] text-center">Professional Hockeys Club</h1>
+                <p class="text-[#13131899] text-[16px] font-medium mt-6 mb-8 text-center w-1/2 mx-auto">Dit amet
+                    consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                    nullam proin. </p>
+                <hr class="text-[#13131833] mb-12">
+
+                <!-- ratial progress card -->
+                <div class="grid gap-8 grid-cols-1 lg:grid-cols-4">
+
+                    <!-- first ratial card start-->
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="radial-progress text-[#131318] text-[28px] font-extrabold" style="--value:87; " role="progressbar">87%</div>
+
+                        <h5 class="text-[#131318] text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
+                        <p class="text-[#13131899] text-[16px] font-normal  text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- first ratial card end -->
+
+                    <!-- first ratial card start-->
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="radial-progress text-[#131318] text-[28px] font-extrabold" style="--value:87; " role="progressbar">87%</div>
+
+                        <h5 class="text-[#131318] text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
+                        <p class="text-[#13131899] text-[16px] font-normal  text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- first ratial card end -->
+
+                    <!-- first ratial card start-->
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="radial-progress text-[#131318] text-[28px] font-extrabold" style="--value:87; " role="progressbar">87%</div>
+
+                        <h5 class="text-[#131318] text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
+                        <p class="text-[#13131899] text-[16px] font-normal  text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- first ratial card end -->
+
+                    <!-- first ratial card start-->
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="radial-progress text-[#131318] text-[28px] font-extrabold" style="--value:87; " role="progressbar">87%</div>
+
+                        <h5 class="text-[#131318] text-xl font-semibold mt-6 mb-4">Prayer Facility</h5>
+                        <p class="text-[#13131899] text-[16px] font-normal  text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- first ratial card end -->
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
